@@ -1,0 +1,11 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+.appTitle {
+  margin-left: 768px;
+}
+
+.example-icon {
+  margin-right: 100px;
+}

@@ -1,0 +1,29 @@
+<mat-toolbar>
+    <button class="menuButton" mat-icon-button [matMenuTriggerFor]="menu"
+    #matMenuTrigger="matMenuTrigger" >
+      <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <div (click)="navbarMenuTrigger.openMenu()">
+        <button mat-menu-item routerLink="/books">Books</button>
+        <button mat-menu-item routerLink="/movies">Movies</button>
+      </div>
+    </mat-menu>
+    <h1 class="appTitle" routerLink="/home">Dennis' Books and Movies</h1>
+
+  
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon"  mat-icon-button [matMenuTriggerFor]="account" #matMenuTrigger="matMenuTrigger" >
+      <mat-icon>account_circle</mat-icon> {{loggedInUser.userName}}
+      <mat-menu #account="matMenu">
+        <div (click)="accountMenuTrigger.openMenu()">
+          <button mat-menu-item routerLink="/edit-account">Account Settings</button>
+          <button mat-menu-item routerLink="/users">Manage Users</button>
+          <button mat-menu-item routerLink="/">Log Out</button>
+        </div>
+      </mat-menu>
+      </button>
+  
+    
+   
+  </mat-toolbar>

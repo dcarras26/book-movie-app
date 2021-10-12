@@ -1,0 +1,13 @@
+.books,
+.movies {
+  flex-basis: 100%;
+  width: 100px;
+}
+
+.main {
+  display: flex;
+}
+
+.movies {
+  min-width: 50vw;
+}
