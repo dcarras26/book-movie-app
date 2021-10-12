@@ -1,0 +1,29 @@
+<h1 class="text-center" >Edit Movie</h1>
+
+<br>
+<br>
+
+<div class="editMovieForm">
+    <form action="">
+        Title: <input style="margin-left: 10px;" type="text" id="firstname" name="fname" value={{editMovie.title}}>
+        <br>
+        <br>
+        Director: <input style="margin-left: 10px;" type="text" id="lname" name="lname" value={{editMovie.director}}>
+        <br>
+        <br>
+        Duration: <input style="margin-left: 10px;" type="text" id="email" name="email" value={{editMovie.duration}}>
+        <br>
+        <br>
+        Rating: <input style="margin-left: 10px;" type="text" id="firstname" name="fname" value={{editMovie.rating}}>
+    </form>
+</div>
+<br>
+<br>
+<div class="submitDiv">
+    <span class="submitSpan"><button class="btn btn-success" routerLink="/movies"> Submit Changes</button></span>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <span><button class="btn btn-danger" (click)="goToMovies()">Cancel</button></span>
+</div>

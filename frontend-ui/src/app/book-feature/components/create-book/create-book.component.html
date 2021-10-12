@@ -1,0 +1,31 @@
+<div style="font-family: sans-serif; font-size: large; font-weight: bold;" class="col-md-6 offset-md-3">
+    <h1 class="text-center" >Add Book</h1>
+    <br>
+    <br>
+        <form (ngSubmit) = "onSubmit()">
+            <div class="form-group">
+                Title: <input class="form-control" style="margin-left: 10px;" type="text" id="bookTitle" name="bookTitle" 
+                                    [(ngModel)] = "book.title">
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                Author: <input class="form-control" style="margin-left: 10px;" type="text" id="bookAuthor" name="bookAuthor" 
+                                    [(ngModel)] = "book.author">
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                ISBN: <input class="form-control" style="margin-left: 10px;" type="text" id="bookIsbn" name="bookIsbn"  
+                                    [(ngModel)] = "book.isbn">
+            </div>
+            <br>
+            <br>
+                <button class="btn btn-success" type="submit" >Submit</button>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <span><button type="button" class="btn btn-danger" routerLink="/books">Cancel</button></span>
+        </form>
+</div>

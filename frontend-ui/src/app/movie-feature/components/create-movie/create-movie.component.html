@@ -1,0 +1,38 @@
+<div style="font-family: sans-serif; font-size: large; font-weight: bold;" class="col-md-6 offset-md-3">
+    <h1 class="text-center" >Add Movie</h1>
+    <br>
+    <br>
+        <form (ngSubmit) = "onSubmit()">
+            <div class="form-group">
+                Title: <input class="form-control" style="margin-left: 10px;" type="text" id="movieTitle" name="movieTitle" 
+                                    [(ngModel)] = "movie.title">
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                Director: <input class="form-control" style="margin-left: 10px;" type="text" id="movieDirector" name="movieDirector" 
+                                    [(ngModel)] = "movie.director">
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                Rating: <input class="form-control" style="margin-left: 10px;" type="text" id="movieRating" name="movieRating"  
+                                    [(ngModel)] = "movie.rating">
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                Duration: <input class="form-control" style="margin-left: 10px;" type="text" id="movieDuration" name="movieDuration" 
+                                    [(ngModel)] = "movie.duration">
+            </div>
+            <br>
+            <br>
+                <button class="btn btn-success" type="submit" >Submit</button>
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                &nbsp;
+                <span><button type="button" class="btn btn-danger" routerLink="/movies">Cancel</button></span>
+        </form>
+</div>
+

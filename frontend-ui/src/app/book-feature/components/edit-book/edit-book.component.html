@@ -1,0 +1,26 @@
+<h1 class="text-center" >Edit Book</h1>
+
+<br>
+<br>
+
+<div class="editBookForm">
+    <form action="">
+        Title: <input style="margin-left: 10px;" type="text" id="firstname" name="fname" value={{editBook.title}}>
+        <br>
+        <br>
+        Author: <input style="margin-left: 10px;" type="text" id="lname" name="lname" value={{editBook.author}}>
+        <br>
+        <br>
+        ISBN: <input style="margin-left: 10px;" type="text" id="email" name="email" value={{editBook.isbn}}>
+        </form>
+</div>
+<br>
+<br>
+<div class="submitDiv">
+    <span class="submitSpan"><button  type="button" class="btn btn-success" routerLink="/books"> Submit Changes</button></span>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <span><button type="button" class="btn btn-danger" routerLink="/books">Cancel</button></span>
+</div>
