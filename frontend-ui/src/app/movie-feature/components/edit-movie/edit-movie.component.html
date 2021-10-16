@@ -4,17 +4,17 @@
 <br>
 
 <div class="editMovieForm">
-    <form action="">
-        Title: <input style="margin-left: 10px;" type="text" id="firstname" name="fname" value={{editMovie.title}}>
+    <form (ngSubmit) = "onSubmit">
+        Title: <input style="margin-left: 10px;" type="text" id="title" name="title" value={{editMovie.title}}>
         <br>
         <br>
-        Director: <input style="margin-left: 10px;" type="text" id="lname" name="lname" value={{editMovie.director}}>
+        Director: <input style="margin-left: 10px;" type="text" id="director" name="director" value={{editMovie.director}}>
         <br>
         <br>
-        Duration: <input style="margin-left: 10px;" type="text" id="email" name="email" value={{editMovie.duration}}>
+        Duration: <input style="margin-left: 10px;" type="text" id="duration" name="duration" value={{editMovie.duration}}>
         <br>
         <br>
-        Rating: <input style="margin-left: 10px;" type="text" id="firstname" name="fname" value={{editMovie.rating}}>
+        Rating: <input style="margin-left: 10px;" type="text" id="rating" name="rating" value={{editMovie.rating}}>
     </form>
 </div>
 <br>
@@ -25,5 +25,5 @@
     &nbsp;
     &nbsp;
     &nbsp;
-    <span><button class="btn btn-danger" (click)="goToMovies()">Cancel</button></span>
+    <span><button class="btn btn-danger" (click)="goToMovieList()">Cancel</button></span>
 </div>

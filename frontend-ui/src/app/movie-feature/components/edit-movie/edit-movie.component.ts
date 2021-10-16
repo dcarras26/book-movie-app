@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Movie } from '../../models/movie';
 import { Router } from '@angular/router';
+import { MovieService } from '../../services/movie.service';
 
 @Component({
   selector: 'app-edit-movie',
@@ -9,20 +10,21 @@ import { Router } from '@angular/router';
 })
 export class EditMovieComponent implements OnInit {
 
-  editMovie: Movie = {
-    title: "Movie1",
-    movieId: 10,
-    director: "Dennis Carrasquillo",
-    duration: "2hr 15m",
-    rating: "R",
-  }
+  editMovie: Movie = new Movie();
+  id: number;
 
-  constructor(private route:Router) { }
+  constructor(private route:Router, private movieService: MovieService) { }
 
   ngOnInit(): void {
   }
 
-  goToMovies() {
+  onSubmit() {
+    this.movieService.updateMovie(this.id, this.editMovie).subscribe(data => {
+      this.goToMovieList();
+    }, error => console.log(error));
+  }
+
+  goToMovieList() {
     this.route.navigate(['/movies']);
   }
 }
