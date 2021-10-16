@@ -7,8 +7,11 @@ Overview:
 Technology Used:
 
 -DB: The database used for this project is a PostgreSQL database.
+
 -Backend: The backend for this project was written in Java utilizing the Spring Framework to map to the database and to manage the REST endpoints.
+
 -Frontend: The frontend for this project was written using the Angular Framework.
+
 -Styling: Bootstrap 5 was used for the tables, navbar, and buttons.
 
 Issues:
@@ -18,5 +21,11 @@ Issues:
 Improvements:
 
 - One improvement is to implement the user and user login. I would like to have a registration form and use Spring Security and possibly LDAP to manage users.
+
 - Another improvement that I want to add is beautiful homepage.
-- The last improvement that I would want to add is a search capability inside the application that utilizes a movie database API like IMDB. 
+
+- I also want to add JUnit tests for the REST methods and run full tests.
+
+- I want to add CI/CD with either Jenkins or deploy the application to the cloud and use a cloud pipeline such as in AWS or Azure.
+
+- The last improvement that I would want to add is a search capability inside the application that utilizes a movie database API like IMDB.
