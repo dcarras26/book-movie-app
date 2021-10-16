@@ -17,7 +17,7 @@ const routes: Routes = [
   {path: "create-users", component: CreateUserComponent},
   {path: 'books', component: BookComponent},
   {path: "create-books", component: CreateBookComponent},
-  {path: 'edit-book', component: EditBookComponent},
+  {path: 'edit-book/:id', component: EditBookComponent},
   {path: 'movies', component: MovieComponent},
   {path: "create-movies", component: CreateMovieComponent},
   {path: "edit-movie", component: EditMovieComponent},

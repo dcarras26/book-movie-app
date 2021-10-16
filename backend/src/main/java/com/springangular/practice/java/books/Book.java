@@ -5,14 +5,23 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.validation.constraints.NotNull;
+
 import org.springframework.data.relational.core.mapping.Table;
 
+
+/**
+ * Entity class for {@link Book}
+ * @author dcarrasquillo
+ *
+ */
 @Entity
 @Table(value = "books")
 public class Book {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@NotNull
 	private long bookId;
 	
 	@Column(name = "title")

@@ -18,4 +18,13 @@ export class MovieService {
   createMovie(movie: Movie): Observable<Object>{
     return this.httpClient.post(`${this.baseURL}`, movie);
   }
+
+  updateMovie(id:number, movie: Movie): Observable<Object> {
+    return this.httpClient.put(`${this.baseURL}/${id}`, movie);
+
+  }
+
+  deleteMovie(id:number): Observable<Object> {
+    return this.httpClient.delete(`${this.baseURL}/${id}`);
+  }
 }
